@@ -1,0 +1,43 @@
+1. Padrões de Nomeclaturas
+CamelCase: minhaFuncao()
+PascalCase: MinhClasse
+snakecase: minhavariavel
+kebab-case: meu-arquivo
+
+2. Convençôes no Python
+Variaveis e funçôes:
+snake_case
+Classes: PascalCase
+Costanstes:
+MAIÚSCULASCOMUNDESCORE
+
+
+Ferramentas e Tecnologias comuns
+1. Gerenciadores de Pacotes
+pip (Python)
+npm (Node.js)
+Moven (Java)
+Componser (PHP)
+
+2. Ferramentas de Qualidade:
+Linters:
+ESLint (JavaScript)
+Pylint (Python)
+Sonalint (Mútilpas Linguagens)
+
+Formatadores:
+Prettier (JavaScript)
+Black (Python)
+gofmt (Go)
+
+Metodologias:
+Scrum
+Kanban
+XP (Xtreme Programming)
+
+2 Termos comuns
+Sprint: Ciclo de desenvolvimento
+Daily: Reunião diária
+Backlog: Lista de tarefas
+Story Points:p POntos de complexidade
+MVP: Minimo produto viável
