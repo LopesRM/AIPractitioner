@@ -3,7 +3,7 @@ pessoas = []
 
 def pessoacadastro():
     nome = input("Nome: ")
-    idade = int(input("Sua Idade: "))
+    idade = float(input("Sua Idade: "))
     minhapessoa = pessoa(nome, idade)
     pessoas.append(minhapessoa)
 
@@ -25,7 +25,6 @@ while flag !=True:
     menu = int(input("\t\n 1 - Cadastrar Pessoa \t\n 2 - Verificar idade: "))
     if menu == 1:
         pessoacadastro()
-        print (pessoas [0].nome)
     elif menu == 2:
         showpessoa()
         addcheck = int(input("Qual é o ID da pessoa: ")) -1
@@ -38,4 +37,3 @@ while flag !=True:
             else:
                 print("Menor de Idade")
         
-    
