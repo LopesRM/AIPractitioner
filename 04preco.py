@@ -17,6 +17,15 @@ def showproduto ():
     for produto in produtos:
         id = (id+1)
         print (f"{id} {produto.nome} {produto.preco}")
+
+def showcart ():
+    if not carrinho:
+        print("Seu carrinho esta vazio.")
+        return
+    
+    print("\nSeu carrinho tem os seguintes intes: ")
+    for i, item in enumerate(carrinho, start = 1):
+        print (f"Você tem no seu carrinho os seguintes itens: {i} {item.nome} preço {item.preco:.2f}")
         
     
 #Registro objeto
@@ -43,6 +52,9 @@ while flag != True:
         produtinho.preco *= quantidadecart
         carrinho.append(produtinho)
         print (produtinho.preco)
+    elif menu == 5:
+        showcart()
+    
 
 #Adicionar função adicionar multiplos itens
 #Visualizar carrinho
