@@ -5,8 +5,13 @@ pessoa = []
 #Registro
 def registro ():
     nome = input("Seu Nome: ")
-    altura = float(input("Sua altura: "))
-    peso =  float(input("Seu peso: "))
+    try:
+        altura = float(input("Sua altura: (00.00)"))
+        peso =  float(input("Seu peso: (00.00)"))
+    except ValueError:
+        print("Erro")
+        return
+    
     sexo = input("\t\n 1 - Masculino \t\n 2 - Feminino")
     
     if sexo == "1":
@@ -23,20 +28,23 @@ def registro ():
 
 #Objeto pessoa
 class cpessoa:
-    def __init__ (self,nome, altura,peso, sexo):
+    def __init__ (self, nome, altura, peso, sexo):
         self.nome = nome
         self.altura = altura
         self.peso = peso    
         self.sexo = sexo
+    def calcular_imc (self):
+        print(f"Calcular o imc para{self.nome}: Altura = {self.altura:.2f}. peso = {self.peso:.2f}")
+        return self.peso / (self.altura ** 2)
 
 def cpessoaid ():
-    id = 0
-    for cpessoa in pessoa:
-        id = (id+1)
-        print (f"{id} {pessoa.nome} {pessoa.altura} {pessoa.peso}")
+    if not pessoa:
+        print("Sem registro")
+        return
+    for i, p in enumerate(pessoa, start = 0): 
+        print(f"{i} Pessoa é {p.nome} altura é {p.altura}, o peso é {p.peso}")
+    
 
-def calcular_imc (self):
-    return self.peso / (self.altura **2)
 
 #Menu
 flag = False
@@ -50,9 +58,33 @@ while flag != True:
     if menu == "1":
         registro()
     elif menu == "2":
-        for p in pessoa:
-            print(F"Óla {p.nome}, sua altura é de {p.altura} seu peso é de {p.peso}, e seu sexo é {p.sexo}")
+        cpessoaid()
+
     elif menu == "3":
-        idpessoa = int(input("Qual ID de Registro: ")) - 1
-        cpessoaid = cpessoaid
-        imc = pessoa[cpessoaid].calcular_imc()
+        if not pessoa:
+            print("Não temos registro")
+        else:
+            cpessoaid()
+
+            try:
+                idpessoa = int(input("Qual Id de Registro deseja calcular"))
+                if 0<= idpessoa < len(pessoa):
+                    imc = pessoa[idpessoa].calcular_imc()
+                    print(f"IMC seu {pessoa[idpessoa].nome}: {imc:.2f}")
+                    if imc < 18.5:
+                        print("Abaixo do peso")
+                    elif 18.5 <= imc <= 24.9:
+                        print("Peso Normal")
+                    elif 25.0 <= imc <= 29.9:
+                        print("Sobrepeso")
+                    elif 30.0 <= imc <= 34.9:
+                        print("obesidade 1")
+                else:
+                    print("ID Invalido")
+            except ValueError:
+                print("Entrada  Invalida")
+
+
+
+
+                
