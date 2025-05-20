@@ -55,6 +55,3 @@ while flag != True:
     elif menu == 5:
         showcart()
     
-
-#Adicionar função adicionar multiplos itens
-#Visualizar carrinho

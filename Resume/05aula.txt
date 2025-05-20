@@ -1,0 +1,21 @@
+Python é uma linguagem programaão conhecida por sua simplicidade e clareza. Sua sintaxe permite que os desenvolvedores escrevam códigos
+de forma concisa, facilitando leitura e manutenção
+
+sintaxe básica
+identação
+comentarios
+variaveis
+
+
+palavra reservada
+False
+white
+true
+id 
+for 
+else 
+if
+elif
+
+
+Entrada de Dados
