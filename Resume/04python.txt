@@ -1,0 +1,41 @@
+Saudação de Python
+print("Hell Word")
+
+ a = (10)
+ b = (20)
+
+ print = (a+b)
+ 
+nome = input("inserir nome: ")
+sobrenome = input("Inserir sobrenome: ") #
+print(nome +" "+sobrenome)
+
+a = int(input("Inserir numero: "))
+b = int(input("Inserir numero: "))
+soma = a + b
+
+print ("Resultado: ", soma)
+
+a = int(input("Inserir numero: "))
+b = int(input("Inserir numero: "))
+soma = a + b
+
+print ("Resultado: ",soma)
+
+#Programação de saudação
+Saudação = "Hallo homora"
+Resposta = str(input("Qual sua resposta: "))
+
+
+if resposta = ("Bom dia")
+print (O que tem de bom? Éoutro dia igual a outro)
+elif = ("Boa tarde")
+print (Tarde? Que horas são perdi minha aula)
+if resposta = ("Boa Noite")
+print = "Noite ja???? É hora de dormir"
+
+#Calculadora de soma
+
+#Calculadora de Volume
+
+#Calculadora de Preço Total
