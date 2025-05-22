@@ -1,3 +1,15 @@
+#########################
+######## Aula 07 ########
+#########################
+
+####################################
+######## Conversor de moeda ########
+####################################
+
+
+#Exercicios solicitados sobre python
+
+
 # 1- Conversor de Moeda
 # Crie um programa que converte um valor em reais para dólares e euros. Use os seguintes dados:
 
@@ -6,9 +18,7 @@
 # * Taxa do euro: R$ 6.15
 # O programa deve calcular e exibir os valores convertidos, arredondando para duas casas decimais.
 
-####################################
-######## Conversor de moeda ########
-####################################
+##################################################################################################
 
 # cotacaos = [] #lista para armazenar a cotacao
 
@@ -72,6 +82,8 @@
 # O programa deve calcular o valor do desconto e o preço final, exibindo todos os detalhes.
 
 
+#####################################################################################################
+
 
 # produto = float(input("Qual valor do produto: "))
 # desconto = float(input("Qual valor do desconto: "))
@@ -80,9 +92,11 @@
 # precofinal2 = (produto - precofinal)
 # print(f"Seu produto ficou com o desconto de {precofinal} ficando em {precofinal2}")
 
+
 #######################
 ######## Média ########
 #######################
+
 
 # notaA = float(input("Nota A "))
 # notaB = float(input("Nota B "))
@@ -105,7 +119,7 @@
 # O programa deve calcular o consumo médio (km/l) e exibir todos os dados da viagem, incluindo o resultado final arredondado para duas casas decimais.
 
 
-
+#####################################################################################################
 
 
 # combustivelkm = []
@@ -139,7 +153,13 @@
 #          if not combustivelkm:
 #             print("Sem registro de veiculo")
             
-#     ultima_combustiveldistancia = combustivelkm [-1]
-#     consumodistancia2 =  ultima_combustiveldistancia.km / ultima_combustiveldistancia.combustivel
-    
-#     print(f"Seu consumo de gasolina é de {consumodistancia2} por km rodado")
+#             ultima_combustiveldistancia = combustivelkm [-1]
+#             consumodistancia2 =  ultima_combustiveldistancia.km / ultima_combustiveldistancia.combustivel
+#             print(f"Seu consumo de gasolina é de {consumodistancia2} por km rodado")
+
+#     elif menu == 3:
+#         print ("Saindo do sistema")
+#         flag = True
+
+# else:
+#     print("Opção invalida")
