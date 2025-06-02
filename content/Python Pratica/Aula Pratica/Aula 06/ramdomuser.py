@@ -1,4 +1,4 @@
-import requests
+import requests 
 
 def obter_usuario_aleatorio():
     """Obtém um usuário aleatório da API 'Random User Generator'"""
