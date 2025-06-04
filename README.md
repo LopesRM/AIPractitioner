@@ -1,5 +1,5 @@
 📚 Estrutura do Curso
-
+```
 AIPractitioner/
 git/
 └── content/
@@ -13,8 +13,7 @@ git/
     │   └── Extra_Pratica/             # Exercícios adicionais
     │
     └── Resume/                        # Resumos e materiais teóricos
-    
-
+```
 🎯 Objetivo do Repositório
 Este repositório contém materiais e exercícios práticos do curso AWS AI Practitioner, com foco em:
 
